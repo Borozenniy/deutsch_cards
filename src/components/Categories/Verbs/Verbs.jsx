@@ -6,6 +6,7 @@ import { getDocs, collection } from "firebase/firestore";
 import { Link } from "react-router-dom";
 import Categories from "../Categories";
 import { Context } from "../../../Context";
+import VerbsList from "./VerbsList";
 
 const Verbs = () => {
    const [deutsch, setDeutsch] = useState();
@@ -34,25 +35,7 @@ const Verbs = () => {
       <>
          <Header />
          <Categories />
-         <div>
-            <h3>Verbs</h3>
-            <div
-               style={{
-                  display: "flex",
-                  flexWrap: "wrap",
-                  gap: "5px",
-                  flexDirection: "column",
-               }}
-            >
-               {deutsch
-                  ? deutsch.map((index) => (
-                       <Link key={index.id} to={index.id}>
-                          {index.name}
-                       </Link>
-                    ))
-                  : null}
-            </div>
-         </div>
+         <VerbsList list={deutsch} />
       </>
    );
 };

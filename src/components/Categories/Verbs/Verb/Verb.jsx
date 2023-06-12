@@ -26,10 +26,9 @@ const VerbGenerate = () => {
          <Header />
          <Categories />
          <ButtonBack />
-         <div>
-            <h3>{id}</h3>
-            <GenerateVerbInfo verb={chooseVerb} />
-         </div>
+
+         <h3>{id}</h3>
+         <GenerateVerbInfo verb={chooseVerb} />
       </>
    );
 };

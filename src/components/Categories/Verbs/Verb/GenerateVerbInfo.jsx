@@ -10,7 +10,6 @@ const GenerateVerbInfo = ({ verb }) => {
    console.log(verb);
    return (
       <div className="verb">
-         <h3></h3>
          <div className="verb__info">
             <p>Presens</p>
             {verb !== undefined

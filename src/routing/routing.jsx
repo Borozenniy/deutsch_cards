@@ -16,19 +16,15 @@ export const router = createBrowserRouter([
       element: <App />,
    },
    {
-      path: "/category",
-      element: <Header />,
-   },
-   {
-      path: "/category/verbs",
+      path: "/verbs",
       element: <Verbs />,
    },
    {
-      path: "/category/nomens",
+      path: "/nomens",
       element: <Nomens />,
    },
    {
-      path: "/category/verbs/:id",
+      path: "verbs/:id",
       element: <VerbGenerate />,
    },
 ]);

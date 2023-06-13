@@ -73,11 +73,11 @@
 /*---Verb---*/
 .verb {
    display: flex;
-   gap: 33%;
+   gap: 20px;
    margin: 0px 0.5% 0px 0.5%;
    /* text-align: center; */
-   /* flex-wrap: wrap; */
-   justify-content: flex-end;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
 }
 
 .verb__info {

@@ -6,10 +6,14 @@ const Categories = () => {
          <h2> Kategorie </h2>
          <div className="category__list">
             <Link to={"/verbs/"}>Verbs</Link>
-            <Link to={"/nomens/"}>Nomens</Link>
+            <Link to={"/pronomen/"}>Pronomen</Link>
          </div>
       </div>
    );
 };
 
 export default Categories;
+
+/*
+<Link to={"/nomens/"}>Nomens</Link>
+*/
